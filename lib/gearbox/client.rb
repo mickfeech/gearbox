@@ -1,5 +1,7 @@
 module Gearbox
   class Client
+    REQUEST_CLASSES = [ Gearbox::Endpoint::Images
+    ]
     attr_reader :configuration
 
     def initialize(options = nil)

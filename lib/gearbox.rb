@@ -4,8 +4,7 @@ require 'gearbox/configuration'
 require 'gearbox/error'
 require 'gearbox/version'
 require 'gearbox/client'
-require 'gearbox/images'
-require 'YAML'
+require 'gearbox/endpoint/image'
 
 module Gearbox
   # Returns an initially un-configured instance of the client
