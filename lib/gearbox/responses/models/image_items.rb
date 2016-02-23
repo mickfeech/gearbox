@@ -1,5 +1,4 @@
 require 'gearbox/responses/base'
-require 'gearbox/responses/models/docker_image_reference'
 
 module Gearbox
   module Response
