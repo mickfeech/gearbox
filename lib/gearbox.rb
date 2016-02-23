@@ -1,10 +1,6 @@
-require 'faraday'
-require 'faraday_middleware'
-require 'gearbox/configuration'
-require 'gearbox/error'
 require 'gearbox/version'
 require 'gearbox/client'
-require 'gearbox/endpoint/image'
+
 
 module Gearbox
   # Returns an initially un-configured instance of the client

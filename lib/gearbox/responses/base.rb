@@ -1,3 +1,5 @@
+require 'hashie'
+
 module Gearbox
   module Response
     class Base
