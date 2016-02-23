@@ -1,5 +1,6 @@
 require 'spec_helper'
 require 'json'
+
 describe Gearbox::Endpoint::Images do
   include_context 'shared configuration'
 
@@ -14,11 +15,8 @@ describe Gearbox::Endpoint::Images do
       end
     }
 
-    it { should be_a(Gearbox::Response::Images) }
-
-    #it 'It queries the api' do
-    #  expect(client.images).to be_a(Gearbox::Response::Images)
-    #end
-
+    it { is_expected.to be_a(Gearbox::Response::Images) }
+    its('list.kind') { should eql('ImageList')}
+    its('list.items.first.dockerImageMetadata.kind') { should eql('DockerImage')}
   end
 end
