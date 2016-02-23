@@ -5,5 +5,3 @@ gemspec
 
 gem 'faraday'
 gem 'faraday_middleware'
-gem 'rspec-its'
-gem 'hashie'
