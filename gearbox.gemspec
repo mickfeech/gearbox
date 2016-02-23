@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Openshift API wrapper for ruby}
   spec.description   = %q{Openshift API wrapper for ruby}
-  spec.homepage      = "https://www.github.com/mickfeech/gearbox"
+  spec.homepage      = "https://github.com/mickfeech/gearbox"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
