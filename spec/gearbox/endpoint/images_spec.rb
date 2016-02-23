@@ -10,7 +10,7 @@ describe Gearbox::Endpoint::Images do
   describe '#images' do
     it 'It queries the api' do
       #puts client.images.list.items
-      puts client.images.list.items.kind
+      puts client.images.list.items
       sleep(5)
       expect(client.images.list.kind).to eql('ImageList')
     end
