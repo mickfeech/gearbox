@@ -4,15 +4,15 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'gearbox/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gearbox"
+  spec.name          = 'gearbox'
   spec.version       = Gearbox::VERSION
-  spec.authors       = ["mickfeech"]
-  spec.email         = ["cmcfee@kent.edu"]
+  spec.authors       = ['mickfeech']
+  spec.email         = ['cmcfee@kent.edu']
 
   spec.summary       = %q{Openshift API wrapper for ruby}
   spec.description   = %q{Openshift API wrapper for ruby}
-  spec.homepage      = "https://github.com/mickfeech/gearbox"
-  spec.license       = "MIT"
+  spec.homepage      = 'https://github.com/mickfeech/gearbox'
+  spec.license       = 'MIT'
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
@@ -23,13 +23,13 @@ Gem::Specification.new do |spec|
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
+  spec.bindir        = 'exe'
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.11"
-  spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency 'bundler', '~> 1.11'
+  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'webmock'
   spec.add_development_dependency 'vcr'
   spec.add_development_dependency 'rspec-its'
