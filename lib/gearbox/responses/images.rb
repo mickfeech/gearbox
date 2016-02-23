@@ -5,12 +5,10 @@ module Gearbox
   module Response
     class Images < Base
 
-      attr_reader :items
+      attr_reader :list
 
       def initialize(obj)
-        @items = parse(obj, Model::Images)
-        #total_img_array = obj['items']
-        #@items = obj
+        @list = parse(obj, Model::Images)
       end
     end
   end

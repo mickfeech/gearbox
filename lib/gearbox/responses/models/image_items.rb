@@ -1,16 +1,16 @@
 require 'gearbox/responses/base'
-require 'gearbox/responses/models/image_items'
+require 'gearbox/responses/models/docker_image_reference'
 
 module Gearbox
   module Response
     module Model
-      class Images < Response::Base
+      class ImageItems < Response::Base
 
-        attr_reader :kind, :items
+        attr_reader
 
         def initialize(obj)
           super(obj)
-          @items = parse(@items, ImageItems)
+
         end
       end
     end
