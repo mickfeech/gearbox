@@ -1,4 +1,3 @@
-require 'YAML'
 require 'gearbox/responses/images'
 
 module Gearbox
