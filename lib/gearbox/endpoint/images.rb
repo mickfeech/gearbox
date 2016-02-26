@@ -1,4 +1,3 @@
-require 'JSON'
 require 'YAML'
 require 'gearbox/responses/images'
 
