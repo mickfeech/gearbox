@@ -7,8 +7,7 @@ require 'gearbox/endpoint/images'
 
 module Gearbox
   class Client
-    REQUEST_CLASSES = [Gearbox::Endpoint::Images
-    ]
+    REQUEST_CLASSES = [Gearbox::Endpoint::Images]
     attr_reader :configuration
 
     def initialize(options = nil)
@@ -76,11 +75,3 @@ module Gearbox
     end
   end
 end
-
-#base_url = options[:base_url]
-#@token = options[:token]
-#@connection = Faraday.new(:url => base_url, :ssl => {verify: false}, :headers => {:Authorization => "Bearer #{@token}"}) do |faraday|
-#  faraday.response :logger
-#  faraday.adapter  Faraday.default_adapter
-#  faraday.response :json
-#end
