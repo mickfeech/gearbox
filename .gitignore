@@ -10,3 +10,4 @@
 /.idea/*
 /projectFilesBackup/*
 *.gem
+/spec/fixtures/*
