@@ -4,10 +4,11 @@ require 'faraday_middleware'
 require 'gearbox/configuration'
 require 'gearbox/error'
 require 'gearbox/endpoint/images'
+require 'gearbox/endpoint/projects'
 
 module Gearbox
   class Client
-    REQUEST_CLASSES = [Gearbox::Endpoint::Images]
+    REQUEST_CLASSES = [Gearbox::Endpoint::Images, Gearbox::Endpoint::Projects]
     attr_reader :configuration
 
     def initialize(options = nil)
